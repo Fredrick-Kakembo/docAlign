@@ -19,12 +19,19 @@ This will run the MMSeq2 search tool using the example sequence data provided al
 ## Usage:
 ```
 nextflow run docAlign.nf \
-    --sequence /path/to/protein/sequences \
-    --databases /path/to/database
-    --outdir <output Directory>
-
+    --sequences /path/to/protein/sequences \
+    --databases /path/to/database \
+    --outdir <output Directory> \
+    -with-docker docAlign
 ```
 
+The `--outdir` option is optional. Default is `results`. It specifies the output directory. Also the path to the sequences and databases should be an absolute path, or specifying the `${PWD}` before your inputs. 
 
-
-`nextflow run pfolding.nf --sequence /home2/fekakembo/Nexflow/pdbbuild/QUERY.fasta --database ${PWD}/DB.fasta --outdir final`
+## Example
+```
+nextflow run docAlign.nf \
+    --sequence ${PWD}/QUERY.fasta \
+    --database ${PWD}/DB.fasta 
+    --outdir Example 
+    -with-docker docAlign
+```
