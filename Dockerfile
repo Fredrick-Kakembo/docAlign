@@ -20,10 +20,10 @@ ENV PATH=$CONDA_DIR/bin:$PATH
 RUN conda install  -c conda-forge -c bioconda mmseqs2 nextflow
 
 # Clone the MMseq2 repository so as to obtain some test datasets to be used
-RUN git clone https://github.com/soedinglab/MMseqs2.git
+#RUN git clone https://github.com/soedinglab/MMseqs2.git
 
 # Copy over the nextflow script and dependency files to the docker environment
 COPY . .
 
 # Default command to run the nextflow pipeline
-CMD ["nextflow", "run", "pfolding.nf"]
+CMD ["nextflow", "run", "docAlign.nf"]
