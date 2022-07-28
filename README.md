@@ -13,8 +13,8 @@ This repository contains code of the docAlign pipeline, a Nextflow and Docker Ve
 
 This will create a docker image of the pipeline called docAlign that will contain all the required dependencies required to run the pipeline. These include; conda, git, wget, MMSeq2, Nextflow. 
 
-Test your docker image: `docker run dockAlign`
-This will run the MMSeq2 search tool using the example sequence data provided along with the pipeline.
+Test your docker image: `docker run dockAlign`    
+This will run the docAlign search tool using the example sequence data provided along with the pipeline.
 
 ## Usage:
 ```
