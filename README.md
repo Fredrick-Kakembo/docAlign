@@ -7,9 +7,9 @@ This repository contains code the docAlign pipeline, a Nextflow and Docker Versi
 
 ## Bulding the docker image:
 **Note**: Ensure you have docker installed and running on your machine. 
-- Clone this repository: git clone https://github.com/Fredrick-Kakembo/docAlign.git`
+- Clone this repository: `git clone https://github.com/Fredrick-Kakembo/docAlign.git`
 - `cd docAlign`
-- Build the Docker image: `docker build -t docAlign .`
+- Build the Docker image: `docker build -t docAlign .`    
 
 This will create a docker image of the pipeline called docAlign that will contain all the required dependencies required to run the pipeline. These include; conda, git, wget, MMSeq2, Nextflow. 
 
@@ -27,7 +27,7 @@ nextflow run docAlign.nf \
 
 The `--outdir` option is optional. Default is `results`. It specifies the output directory. Also the path to the sequences and databases should be an absolute path, or specifying the `${PWD}` before your inputs. 
 
-## Example
+## Example Run
 ```
 nextflow run docAlign.nf \
     --sequence ${PWD}/QUERY.fasta \
