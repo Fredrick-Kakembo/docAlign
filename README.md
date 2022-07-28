@@ -1,5 +1,5 @@
 # docAlign
-This repository contains code the docAlign pipeline, a Nextflow and Docker Version of MMSeq2 software tools for searching  and clustering huge protein and nucleotide sequence sets. 
+This repository contains code of the docAlign pipeline, a Nextflow and Docker Version of MMSeq2 software tools for searching  and clustering huge protein and nucleotide sequence sets. 
 
 ## Description of the files:
 - `docAlign.nf` - Nextflow pipeline implemeting the protein sequence search and alignment to a database
